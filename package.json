@@ -1,0 +1,28 @@
+{
+  "name": "mini.cxx",
+  "version": "0.9.19",
+  "description": "INI file reader and writer; Danijel Durakovic (2018).",
+  "keywords": [
+    "cxx",
+    "library",
+    "ini",
+    "configuration",
+    "parser",
+    "reader",
+    "writer"
+  ],
+  "homepage": "https://github.com/nodef/mini.cxx#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/mini.cxx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/mini.cxx.git"
+  },
+  "license": "MIT",
+  "author": "wolfram77@gmail.com",
+  "main": "mini.h",
+  "scripts": {
+    "test": "bash build.sh test"
+  }
+}
