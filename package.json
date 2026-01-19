@@ -1,6 +1,6 @@
 {
   "name": "mini.cxx",
-  "version": "0.9.19",
+  "version": "0.9.20",
   "description": "INI file reader and writer; Danijel Durakovic (2018).",
   "keywords": [
     "cxx",

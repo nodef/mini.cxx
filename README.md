@@ -36,39 +36,30 @@ This library operates with the `std::string` type to hold values and relies on y
 Run:
 
 ```sh
-$ npm i mini.c
+$ npm i mini.cxx
 ```
 
 And then include `mini.h` as follows:
 
-```c
-// main.c
-#include "node_modules/mini.c/mini.h"
-
-int main() { /* ... */ }
-```
-
-And then compile with `clang` or `gcc` as usual.
-
-```bash
-$ clang main.c  # or, use gcc
-$ gcc   main.c
-```
-
-You may also use a simpler approach:
-
-```c
-// main.c
+```cxx
+// main.cxx
 #include <mini.h>
 
 int main() { /* ... */ }
 ```
 
-If you add the path `node_modules/mini.c` to your compiler's include paths.
+Finally, compile while adding the path `node_modules/mini.cxx` to your compiler's include paths.
 
 ```bash
-$ clang -I./node_modules/mini.c main.c  # or, use gcc
-$ gcc   -I./node_modules/mini.c main.c
+$ clang++ -std=c++17 -I./node_modules/mini.cxx main.cxx  # or, use g++
+$ g++     -std=c++17 -I./node_modules/mini.cxx main.cxx
+```
+
+You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
+
+```bash
+$ cpoach clang++ main.cxx  # or, use g++
+$ cpoach g++     main.cxx
 ```
 
 <br>
@@ -382,6 +373,7 @@ Licensed under the terms of the [MIT license](LICENSE)
 <br>
 
 
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
 [![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/metayeti/mINI)
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/mini.c)
